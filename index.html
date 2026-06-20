@@ -140,6 +140,41 @@ a{color:inherit;text-decoration:none;}
  .hero-title{font-size:40px;} .site-hero::before{font-size:120px;}
  .ch-head .ch-name{font-size:30px;}
 }
+
+/* wy-cross-nav-css v1 */
+/* ── 跨卷導覽（側欄底部）── */
+.sb-cross{display:flex;flex-direction:column;align-items:center;gap:8px;
+  width:100%;margin:18px 0 4px;padding:18px 4px 6px;position:relative;}
+.sb-cross::before{content:"";position:absolute;top:0;left:14%;right:14%;
+  height:1px;background:linear-gradient(90deg,
+    transparent 0%,rgba(184,134,11,.15) 18%,
+    var(--gold,#b8860b) 50%,
+    rgba(184,134,11,.15) 82%,transparent 100%);
+  box-shadow:0 1px 0 rgba(212,168,75,.18);}
+.sb-cross::after{content:"";position:absolute;top:6px;left:38%;right:38%;
+  height:1px;background:linear-gradient(90deg,
+    transparent,rgba(184,134,11,.55),transparent);}
+.sb-x{display:flex;flex-direction:column;align-items:center;gap:3px;
+  text-decoration:none;color:var(--sbText,#d4c4a8);padding:4px 4px;width:100%;
+  border-radius:7px;transition:all .25s;}
+.sb-x:hover{background:rgba(184,134,11,.14);transform:translateY(-1px);}
+.sb-x-glyph{width:30px;height:30px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  border:1.2px solid rgba(212,196,168,.55);
+  color:var(--goldL,#d4a84b);font-family:"Noto Sans TC",sans-serif;font-size:14px;
+  background:rgba(184,134,11,.08);transition:all .25s;}
+.sb-x:hover .sb-x-glyph{border-color:var(--gold,#b8860b);color:#fff;
+  background:linear-gradient(135deg,var(--gold,#b8860b),var(--goldL,#d4a84b));
+  box-shadow:0 0 10px rgba(184,134,11,.5);}
+.sb-x-label{font-family:"Noto Sans TC",sans-serif;font-size:10.5px;
+  letter-spacing:1.2px;color:var(--sbText,#d4c4a8);opacity:.78;text-align:center;
+  line-height:1.25;}
+.sb-x:hover .sb-x-label{color:var(--goldL,#d4a84b);opacity:1;}
+.sb-x-hub .sb-x-glyph{background:linear-gradient(135deg,
+  rgba(184,134,11,.22),rgba(212,168,75,.18));
+  border-color:rgba(212,168,75,.55);color:var(--goldL,#d4a84b);font-size:13px;
+  font-weight:700;letter-spacing:1px;}
+
 </style><meta name="wy-full-protection" content="v2-silent">
 <meta name="robots" content="noai,noimageai,noarchive,index">
 <meta name="googlebot" content="noai,noimageai">
@@ -233,7 +268,22 @@ a{color:inherit;text-decoration:none;}
 <a class="sb-item" data-ch="2" href="#chapter-2"><span class="sb-circle" data-wytext="k8Oh"></span><span class="sb-label" data-wytext="n8eCjMzz"></span></a>
 <a class="sb-item" data-ch="3" href="#chapter-3"><span class="sb-circle" data-wytext="k8Gk"></span><span class="sb-label" data-wytext="ktaLg/rC"></span></a>
 <a class="sb-item" data-ch="4" href="#chapter-4"><span class="sb-circle" data-wytext="kuK2"></span><span class="sb-label" data-wytext="kuKNg9bZ"></span></a>
-<a class="sb-item" data-ch="5" href="#chapter-5"><span class="sb-circle" data-wytext="k8O5"></span><span class="sb-label" data-wytext="k8GkgsTX"></span></a></nav></aside><main class="main"><section class="site-hero"><h1 class="hero-title" data-wytext="nv6mgtbSjNT/kPD+i7Gm17731tvVyOHKn+XogM/g"></h1><div class="hero-sub" data-wytext="kt2KgvjAjdPCncfjTu+OEsj7hpPAsIHs+4zT6A=="></div><div class="hero-range" data-wytext="kNWBh+H9jfrlVYve5cSYvg2UseNZysjNntL9gebtVYqVsNSI29bswcvK1Fqq3kSQ6d2LqJTXvvfUyuDL8dU="></div><div data-wy-notice-hero="v3" style="margin:30px auto 0;padding:18px 24px;max-width:720px;background:rgba(30,26,20,.55);border:1px solid rgba(184,134,11,.45);border-radius:12px;backdrop-filter:blur(4px);text-align:center;font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;font-size:13px;line-height:1.95;color:#c4a76c;letter-spacing:1px;position:relative;">本文為個人研讀彙整，歡迎轉發結緣；轉發請保留連結與作者頻道<a href="https://www.youtube.com/@Chengweiwen/posts" rel="noopener" style="color:#d4a84b;text-decoration:none;border-bottom:1px dotted #b8860b;margin:0 4px;" target="_blank">https://www.youtube.com/@Chengweiwen/posts</a>。<br/><span style="color:#9c8a6a;">不生亦不滅，不常亦不斷；<br/>不一亦不異，不來亦不出。<br/>能說是因緣，善滅諸戲論；<br/>我稽首禮佛，諸說中第一。</span></div></section><section class="preface"><h2 class="preface-title" data-wytext="kM6FRIn67UmB/OFVhoW5"></h2><p data-wytext="keWBjffLgMfkk/DZi52+0a381NPey/3bn9LPjN76lu6m3L+akojqnKDlhcDkiuT5hfLly46aycuqkuWmgf3ljfrlksDZi6iS16D31c31zuTsnfLtjNLPk/C91o6hko/qn7vjhsTBgeD9i8DPyISry+OFkPuXgeTXjfrlmtDvibmI1YHa0vf+yPfgnfLtg97nnM+h0bqqkovjkKrpicTHgcn8hMDZwoW+y9uGkM++g+Xbjfzrnez5i5K615LD0vf4xdrOksXgjNLPk8mm0bqqkonakKz3hOb7gfr4j/Xvxbaby/mhnvi+gtLvjcbCkvfNja241Jre1criyPj+n/PJg8LPmtKh3oevkKfLnoHIhcD8jPf0i+/qyYG7y9OckOKVgs/Pi+nm"></p><p data-wytext="kvyFgezNjebLkOTzia+D16jf1NPey8rUkvjUi8n2kOeg3Yqkk6L2lpHsgvrvi+ThiM/iwoW7yM2LkNKmh+H2j/zGksfqiYSD1pXb1crsyd/EntfHgdjUkdat3LqqkILimq3phuDsjdzYhNLuxYedxdu4ntOFgv/Mh9XokvjEiYay24z60vf4xN/5ksL3gMznndCC3Lqdkon+nJzAicTHgcn8i+/qyoyDy+KsmMW2gd/2jNHtkP/0gZGx1pX/0/ftyd71ldTggfzrkvqc2rKhn7DknKDXifXBj+vlj/XjyqO2yNmXkOKVjMrsh9Xok+Ldi5ys2qrF18DRydn6n/TigenzkvSp3KmNkYbUkaXjiPrIj8HYif77yLOpyNuJmMWhgc/2juH0kNLri5K617HG1c7yxcnon+DZgennkPKy3YumkIbfnrfgiPjngdjahePnyquCzvaz"></p><p data-wytext="kdaigfL7jNb5kvnsi6Om1LH/1uzXy8jAkuDug97MksGt3oWFnqjolpHohcT1iuT5ifjZDdu0v1bU5PgNhufoSI7P1UyX6L8Z1YL20vf0yP/6ndzzgcTIktq33KOlkb7JlpH/hOnpgezyiebvyYC5xOCik8KIh+H2jvXIkP/0hou41Lre0vf0xezmmejlgvzTkOul3Keyk4/7mq3ph9Pjj+rQg8niyYeNy+CNnvm3jM/6jezMkOHCibe92obg2drwyvTnkt/Gh/Xu"></p></section><section class="toc-section"><h2 class="toc-title" data-wytext="kMGQRIbhxkmN+eg="></h2><div class="toc-desc" data-wytext="kvSagNjnjeTlkdb5Tu+OEsjzmZL8gIHy+0ir01WJ8N/JgbvI+7CTwLCDyto="></div><div class="toc-grid"><a class="toc-card" href="#chapter-0"><span class="toc-num" data-wytext="lPmq"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBh+H9jfrlluz1h6qy1Jre1criyPjqn/T2gebtmtKl3YqnmY3+"></span><span class="toc-card-sub" data-wytext="kNKmjcD2gOHjkdbhh6q02pPZ2drwDabWWo/f95P68oujpteoztTy0cXC3A=="></span></span></a>
+<a class="sb-item" data-ch="5" href="#chapter-5"><span class="sb-circle" data-wytext="k8O5"></span><span class="sb-label" data-wytext="k8GkgsTX"></span></a></nav>  <!-- wy-cross-nav v1 -->
+  <div class="sb-cross">
+    <a class="sb-x" href="https://weiwen0925.github.io/dazhidulun-91/" title="第九十一卷">
+      <span class="sb-x-glyph">←</span>
+      <span class="sb-x-label">卷九十一</span>
+    </a>
+    <a class="sb-x sb-x-hub" href="https://weiwen0925.github.io/dazhidulun-0/" title="大智度論門頁">
+      <span class="sb-x-glyph">智</span>
+      <span class="sb-x-label">門頁</span>
+    </a>
+    <a class="sb-x" href="https://weiwen0925.github.io/dazhidulun-93/" title="第九十三卷">
+      <span class="sb-x-glyph">→</span>
+      <span class="sb-x-label">卷九十三</span>
+    </a>
+  </div>
+</aside><main class="main"><section class="site-hero"><h1 class="hero-title" data-wytext="nv6mgtbSjNT/kPD+i7Gm17731tvVyOHKn+XogM/g"></h1><div class="hero-sub" data-wytext="kt2KgvjAjdPCncfjTu+OEsj7hpPAsIHs+4zT6A=="></div><div class="hero-range" data-wytext="kNWBh+H9jfrlVYve5cSYvg2UseNZysjNntL9gebtVYqVsNSI29bswcvK1Fqq3kSQ6d2LqJTXvvfUyuDL8dU="></div><div data-wy-notice-hero="v3" style="margin:30px auto 0;padding:18px 24px;max-width:720px;background:rgba(30,26,20,.55);border:1px solid rgba(184,134,11,.45);border-radius:12px;backdrop-filter:blur(4px);text-align:center;font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;font-size:13px;line-height:1.95;color:#c4a76c;letter-spacing:1px;position:relative;">本文為個人研讀彙整，歡迎轉發結緣；轉發請保留連結與作者頻道<a href="https://www.youtube.com/@Chengweiwen/posts" rel="noopener" style="color:#d4a84b;text-decoration:none;border-bottom:1px dotted #b8860b;margin:0 4px;" target="_blank">https://www.youtube.com/@Chengweiwen/posts</a>。<br/><span style="color:#9c8a6a;">不生亦不滅，不常亦不斷；<br/>不一亦不異，不來亦不出。<br/>能說是因緣，善滅諸戲論；<br/>我稽首禮佛，諸說中第一。</span></div></section><section class="preface"><h2 class="preface-title" data-wytext="kM6FRIn67UmB/OFVhoW5"></h2><p data-wytext="keWBjffLgMfkk/DZi52+0a381NPey/3bn9LPjN76lu6m3L+akojqnKDlhcDkiuT5hfLly46aycuqkuWmgf3ljfrlksDZi6iS16D31c31zuTsnfLtjNLPk/C91o6hko/qn7vjhsTBgeD9i8DPyISry+OFkPuXgeTXjfrlmtDvibmI1YHa0vf+yPfgnfLtg97nnM+h0bqqkovjkKrpicTHgcn8hMDZwoW+y9uGkM++g+Xbjfzrnez5i5K615LD0vf4xdrOksXgjNLPk8mm0bqqkonakKz3hOb7gfr4j/Xvxbaby/mhnvi+gtLvjcbCkvfNja241Jre1criyPj+n/PJg8LPmtKh3oevkKfLnoHIhcD8jPf0i+/qyYG7y9OckOKVgs/Pi+nm"></p><p data-wytext="kvyFgezNjebLkOTzia+D16jf1NPey8rUkvjUi8n2kOeg3Yqkk6L2lpHsgvrvi+ThiM/iwoW7yM2LkNKmh+H2j/zGksfqiYSD1pXb1crsyd/EntfHgdjUkdat3LqqkILimq3phuDsjdzYhNLuxYedxdu4ntOFgv/Mh9XokvjEiYay24z60vf4xN/5ksL3gMznndCC3Lqdkon+nJzAicTHgcn8i+/qyoyDy+KsmMW2gd/2jNHtkP/0gZGx1pX/0/ftyd71ldTggfzrkvqc2rKhn7DknKDXifXBj+vlj/XjyqO2yNmXkOKVjMrsh9Xok+Ldi5ys2qrF18DRydn6n/TigenzkvSp3KmNkYbUkaXjiPrIj8HYif77yLOpyNuJmMWhgc/2juH0kNLri5K617HG1c7yxcnon+DZgennkPKy3YumkIbfnrfgiPjngdjahePnyquCzvaz"></p><p data-wytext="kdaigfL7jNb5kvnsi6Om1LH/1uzXy8jAkuDug97MksGt3oWFnqjolpHohcT1iuT5ifjZDdu0v1bU5PgNhufoSI7P1UyX6L8Z1YL20vf0yP/6ndzzgcTIktq33KOlkb7JlpH/hOnpgezyiebvyYC5xOCik8KIh+H2jvXIkP/0hou41Lre0vf0xezmmejlgvzTkOul3Keyk4/7mq3ph9Pjj+rQg8niyYeNy+CNnvm3jM/6jezMkOHCibe92obg2drwyvTnkt/Gh/Xu"></p></section><section class="toc-section"><h2 class="toc-title" data-wytext="kMGQRIbhxkmN+eg="></h2><div class="toc-desc" data-wytext="kvSagNjnjeTlkdb5Tu+OEsjzmZL8gIHy+0ir01WJ8N/JgbvI+7CTwLCDyto="></div><div class="toc-grid"><a class="toc-card" href="#chapter-0"><span class="toc-num" data-wytext="lPmq"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBh+H9jfrlluz1h6qy1Jre1criyPjqn/T2gebtmtKl3YqnmY3+"></span><span class="toc-card-sub" data-wytext="kNKmjcD2gOHjkdbhh6q02pPZ2drwDabWWo/f95P68oujpteoztTy0cXC3A=="></span></span></a>
 <a class="toc-card" href="#chapter-1"><span class="toc-num" data-wytext="k8Gt"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgNn6jfrlluz1iamY17j52ff1yNvin9fc"></span><span class="toc-card-sub" data-wytext="kMy4jMn6gOHjkPrxi5qeEu/BEZHLpI3a4o/z4JHU2IaKuduv+dnL1g=="></span></span></a>
 <a class="toc-card" href="#chapter-2"><span class="toc-num" data-wytext="k8Oh"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgNv2jfrlluz1hpOW2oD/2dDay8PqkuDugM3BnO++3K6+nq/6"></span><span class="toc-card-sub" data-wytext="k8GkgdDegNfLncH8Tu+OEsnOnJ/erYPUy479+ZDp3Yu+uNWVy9bByA=="></span></span></a>
 <a class="toc-card" href="#chapter-3"><span class="toc-num" data-wytext="k8Gk"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgNnzjfrlluz1hqKQ1KLm2Pbqy9f0n8fPg+7U"></span><span class="toc-card-sub" data-wytext="nvi+gezJgObNk+PlTu+OEsrykJHxn4zK7I3G5pPX8Im2gQ=="></span></span></a>
