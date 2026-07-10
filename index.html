@@ -861,4 +861,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C92P0:END-->
+<!--WY-C92P1:BEGIN-->
+<style id="wy-c92p1-css">
+.c92p1-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c92p1-fabbox.show{display:block;}
+.c92p1-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c92p1-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c92p1-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c92p1-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c92p1-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c92p1-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c92p1-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c92p1-modal.open{display:flex;}
+.c92p1-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c92p1-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c92p1-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c92p1-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c92p1-close:hover{background:#e3d5b8;}
+.c92p1-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c92p1-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c92p1-tbl th,.c92p1-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c92p1-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c92p1-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c92p1-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c92p1-tbl b{color:#8b2500;}
+.c92p1-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c92p1-note b{color:#8b2500;}
+@media(max-width:900px){.c92p1-fabbox{right:14px;}.c92p1-tbl{font-size:11.5px;}.c92p1-card{padding:26px 14px 16px;}}
+</style>
+<div class="c92p1-fabbox" id="c92p1Box"><button class="c92p1-btn" id="c92p1Btn" type="button" aria-label="開啟全景總表"><span class="c92p1-ic">▦</span><span class="c92p1-ls"><span class="c92p1-l1">本品 · 無問而心念·默語辯證</span><span class="c92p1-l2">默念的空間力學</span></span></button></div><div class="c92p1-modal" id="c92p1Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c92p1-card"><button class="c92p1-close" id="c92p1Close" type="button" aria-label="關閉">×</button><h3>第一品 · 無問而心念 · 全景總表</h3><p class="sub">須菩提反常沉默、佛陀以言重答——事理、心法、哲學三層次詮釋辯證，終歸沉默的中觀。</p><table class="c92p1-tbl"><caption>三重伏筆與默語雙成</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>三重伏筆·寂滅無戲論</td><td>語言與概念增殖之止息，既已體證寂滅本應離於言說</td></tr><tr><td>三重伏筆·猶復多問</td><td>大眾對空性體證與語言表達之間所生之認知失調</td></tr><tr><td>三重伏筆·深入禪定</td><td>菩薩諸天入於深定，音聲成音境干擾源，語言反成障礙</td></tr><tr><td>默與語之雙向成全</td><td>須菩提以默隨順寂滅、護持禪定；佛陀以語應機敏銳、廣度眾生</td></tr><tr><td>佛陀音聲善巧</td><td>佛音具殊勝性能入深定而不作干擾，為廣大未悟眾生分別解說</td></tr></tbody></table><table class="c92p1-tbl"><caption>般若心法二喻</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>熱金丸喻</td><td>金喻佛法功德極度珍貴，熱喻取相執著，行而無所著方不灼傷</td></tr><tr><td>戲糞兒喻</td><td>眾生聚土為穀之錯覺，菩薩知其虛妄不生隨喜卻見易度之機</td></tr><tr><td>三輪體空布施</td><td>不住於我（施者）、不住於人（受者）、不住於物與果報</td></tr><tr><td>空有交織反饋</td><td>真空為體不畏生死不貪涅槃，妙有為用涉入萬法度化眾生</td></tr></tbody></table><table class="c92p1-tbl"><caption>二諦圓融與中道實踐</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>勝義諦映射</td><td>須菩提之默——斷戲論、隨順寂滅，離言絕慮畢竟空</td></tr><tr><td>世俗諦映射</td><td>佛陀之語——假名施設、為度眾生，不壞假名而說實相</td></tr><tr><td>二諦交攝誤區</td><td>執勝義易落斷見沈空滯寂，執世俗易落常見執相造作</td></tr><tr><td>中道實踐</td><td>破常見（不住不著）、破斷見（不捨學修）、即空即有</td></tr><tr><td>全息統一與無盡迴圈</td><td>默是語之基礎、語是默之展現、學是不著之用場、不著是學之防護</td></tr></tbody></table><p class="c92p1-note">本品以須菩提反常的沉默開篇，論主由事理、心法、哲學三層次逐一拆解「默」與「語」的表面矛盾，證成二者實為同一寂滅實相在不同維度的全息投影；熱金丸與戲糞兒二喻揭示菩薩「不著而學」的操作定義，終歸於「默是語之基礎、學是不著之用場」的無盡迴圈，文本結構本身即是中觀理論之化身。</p></div></div>
+<script id="wy-c92p1-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c92p1Btn"),BOX=document.getElementById("c92p1Box"),MODAL=document.getElementById("c92p1Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideo,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c92p1Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C92P1:END-->
 </body></html>
